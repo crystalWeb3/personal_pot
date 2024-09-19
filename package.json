@@ -1,5 +1,5 @@
 {
-  "name": "Hiroshi.dev",
+  "name": "powerwebsLim",
   "version": "2.3.0",
   "private": true,
   "scripts": {
@@ -11,13 +11,18 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.19.3",
+    "emailjs-com": "^3.2.0",
     "gray-matter": "^4.0.3",
     "gsap": "^3.11.4",
-    "next": "^13.5.6",
+    "leaflet": "^1.9.4",
+    "next": "^14.2.11",
     "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-leaflet": "^4.2.1",
     "react-rough-notation": "^1.0.3",
+    "react-simple-maps": "^1.0.0",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
     "swiper": "^8.4.5"

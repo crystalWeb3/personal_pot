@@ -31,28 +31,58 @@ const BlogSection: React.FC<Props> = ({ posts }) => {
 
   const teamInfo = [
     {
-        id: 1,
-        name: "Takeshi",
-        description:
-            "Result-oriented senior frontend engineer with 7 years of professional experience in web development. Expert in Typescript, Node.js, React, Angular, Vue, Nest.js, Express.js, PostgreSQL, and MongoDB.",
-        imageUrl: "/team/takeshi.png",
-        resume: "/resume/takeshi.pdf"
+      id: 1,
+      name: "Brandon",
+      role: "Team leader & Blockchain engineer",
+      description:
+        "Results-driven Innovative Blockchain Engineerin designing and implementing secure Blockchain solutions. Proficient in Rust, Node.js, React, Vue and Solidity, with a strong focus on smart contracts, dApps, and tokenomics. Demonstrated success in enhancing system performance and security across DeFi and NFT platforms. Committed to driving technological advancements and fostering team collaboration.",
+      imageUrl: "/team/brandon.png",
+      resume: "#",
     },
     {
-        id: 2,
-        name: "John Lee",
-        description:
-            "I specialize in end-to-end development of software systems using the latest technologies to build Blockchain and web platforms of any kind. ",
-        imageUrl: "/team/jone.png",
-        resume: "/resume/john.pdf"
+      id: 2,
+      name: "Angie",
+      role: "Content Mangement",
+      description:
+        "Malaysian. Ambitious, tech-savvy enthusiast, and well-rounded professional. Passionate in travel, education, healthcare and the creative industry of films and writing. Quick to pick up new skills and adjust to new environment while giving 200% in the work. ",
+      imageUrl: "/team/angie.png",
+      resume: "#",
     },
     {
-        id: 3,
-        name: "Kevin Lim",
-        description:
-            "Senior Full Stack Developer with a vast array of knowledge in many different front end and backend languages, responsive frameworks, databases and best code practices. Having extensive experience working with web and blockchain.",
-        imageUrl: "/team/kevin.png",
-        resume: "/resume/kevin.pdf"
+      id: 3,
+      name: "Kevin",
+      role: "Seinor FullStack Developer",
+      description:
+        "Senior Full Stack Developer with a vast array of knowledge in many different front end and backend languages, responsive frameworks, databases and best code practices. Having extensive experience working with web and blockchain.",
+      imageUrl: "/team/kevin.png",
+      resume: "#",
+    },
+    {
+      id: 4,
+      name: "Melisa",
+      role: "Seinor UI/UX designer",
+      description:
+        "A creative enthusiast with an expansive design skill set and a love for engaging experiences. I believe that the best digital solutions can only be achieved by utilizing a user-centric approach, compelling visual interfaces, and an implementation of powerful interaction design. I enjoy experiencing design in various spaces and creating products that cater to a wide array of human behaviors.",
+      imageUrl: "/team/melisa.png",
+      resume: "#",
+    },
+    {
+      id: 5,
+      name: "Jolly",
+      role: "Seinor Backend Engineer.",
+      description:
+        "Senior backend developer, I seek challenging projects, collaboration with skilled professionals. I value positive company culture, competitive compensation. Driven by 'Creation is my life,' I aim to leverage cutting-edge techs, make a significant impact.",
+      imageUrl: "/team/jolly.png",
+      resume: "#",
+    },
+    {
+      id: 6,
+      name: "Pedro",
+      role: "CTO & Project Management",
+      description:
+        "Professional focus on project management for IT projects, business analyses, digital transformation, process mapping, e-commerce and strategy consulting, within global and virtual teams. Experience working in Agile/Devops environments.",
+      imageUrl: "/team/pedro.png",
+      resume: "#",
     },
   ];
 
@@ -76,13 +106,13 @@ const BlogSection: React.FC<Props> = ({ posts }) => {
             order={1}
             show={isOnScreen}
           >
-            <h2 className="section-heading">About Team</h2>
+            <h2 className="section-heading">Powerful Team</h2>
           </RoughNotation>
         </div>
         <div className="text-center mb-8" ref={elementRef}>
-          I write blog posts about what I've done and what I'm doing{" "}
+          Powerful team for Power websites
           <br className="hidden sm:block" aria-hidden="true" />
-          as a documenting practice. Here are some of my recent blog posts.
+          The most creativce and innovative Developing team
         </div>
         <div>
           <Swiper

@@ -66,19 +66,19 @@ const ProjectCard: React.FC<Props> = ({ index, project }) => {
 
   useEffect(() => {
     let ignore = false;
-    async function fetchData() {
-      const response = await fetch(project.githubApi);
-      const data = await response.json();
-      const stargazersCount = data.stargazers_count;
-      const stargazersUrl = data.stargazers_url;
+    // async function fetchData() {
+    //   const response = await fetch(project.githubApi);
+    //   const data = await response.json();
+    //   const stargazersCount = data.stargazers_count;
+    //   const stargazersUrl = data.stargazers_url;
 
-      if (stargazersCount && stargazersUrl && !ignore) {
-        setStarCount(stargazersCount);
-        setStarCountUrl(stargazersUrl);
-      }
-    }
+    //   if (stargazersCount && stargazersUrl && !ignore) {
+    //     setStarCount(stargazersCount);
+    //     setStarCountUrl(stargazersUrl);
+    //   }
+    // }
 
-    fetchData();
+    // fetchData();
 
     () => {
       ignore = true;

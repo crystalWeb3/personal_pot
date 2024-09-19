@@ -22,10 +22,10 @@ const AppHead: React.FC<Props> = ({
   url = `${process.env.NEXT_PUBLIC_URL}/blog`,
   meta,
 }) => {
-  let author = "Hiroshi Tanaka";
+  let author = "PowerWebs";
   let description =
     "Articles about programming, coding, technologies, software engineering, my personal projects and my experiences.";
-  let siteName = "Hiroshi Tanaka's Blog";
+  let siteName = "PowerWebs's Blog";
   let type = "article";
   let coverImage: string | undefined;
   let coverImageAlt: string | undefined;
@@ -43,8 +43,8 @@ const AppHead: React.FC<Props> = ({
     ogImageAlt = meta.ogImageAlt && meta.ogImageAlt;
   }
 
-  let appOgImage = `${process.env.NEXT_PUBLIC_URL}/Hiroshi-blog-og.png`;
-  let appOgImageAlt = "Hiroshi Tanaka's Blog";
+  let appOgImage = `${process.env.NEXT_PUBLIC_URL}/powerwebs-blog-og.png`;
+  let appOgImageAlt = "PowerWebs's Blog";
 
   if (ogImage) {
     appOgImage = ogImage;

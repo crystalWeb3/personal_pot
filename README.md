@@ -1,7 +1,7 @@
-# Hiroshi Tanaka Portfolio & Blog
+# PowerWebs Portfolio & Blog
 
-![Hiroshi-portfolio-and-blog](https://user-images.githubusercontent.com/53733092/169645862-d1dda9cb-482f-4428-a63c-8eaf6910ab35.png)
-![ts](https://badgen.net/badge/Built%20With/TypeScript/blue) ![vercel](https://img.shields.io/github/deployments/Hiroshi/my-portfolio/production?label=vercel&logo=vercel&logoColor=white)
+![powerwebs-portfolio-and-blog](https://user-images.githubusercontent.com/53733092/169645862-d1dda9cb-482f-4428-a63c-8eaf6910ab35.png)
+![ts](https://badgen.net/badge/Built%20With/TypeScript/blue) ![vercel](https://img.shields.io/github/deployments/powerwebs/my-portfolio/production?label=vercel&logo=vercel&logoColor=white)
 
 My portfolio & blog website developed with Next.JS(SSG) and TypeScript. Tailwind CSS and GSAP is used for styling and animations. Blog contents are written in Markdown format. Light & Dark themes supported.
 
@@ -28,8 +28,8 @@ My portfolio & blog website developed with Next.JS(SSG) and TypeScript. Tailwind
 ## Lighthouse Score
 
 <p align="center">
-  <a href="https://pagespeed.web.dev/report?url=https%3A%2F%2FHiroshi.dev%2F&form_factor=desktop">
-    <img width="710" alt="Hiroshi Tanaka Portfolio Website Lighthouse Score" src="public/lighthouse-result.svg">
+  <a href="https://pagespeed.web.dev/report?url=https%3A%2F%2FCrystalWeb3%2F&form_factor=desktop">
+    <img width="710" alt="PowerWebs Portfolio Website Lighthouse Score" src="public/lighthouse-result.svg">
   <a>
 </p>
 
@@ -38,13 +38,13 @@ My portfolio & blog website developed with Next.JS(SSG) and TypeScript. Tailwind
 Clone the project
 
 ```bash
-git clone https://github.com/lucky-gru/Hiroshi.dev.git
+git clone https://github.com/powerwebs/CrystalWeb3.git
 ```
 
 Go to the project directory
 
 ```bash
-cd Hiroshi.dev
+cd CrystalWeb3
 ```
 
 Remove remote origin
@@ -78,4 +78,4 @@ The digital art in the hero section was illustrated by a friend of mine ([Swann 
 
 ## Author
 
-- [@Hiroshi](https://Hiroshi.dev)
+- [@powerwebs](https://CrystalWeb3)

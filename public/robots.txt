@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://Hiroshi.dev/sitemap.xml
+Sitemap: https://CrystalWeb3/sitemap.xml

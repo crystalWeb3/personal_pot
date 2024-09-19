@@ -9,7 +9,12 @@ import { useSection } from "context/section";
 import useOnScreen from "hooks/useOnScreen";
 import useScrollActive from "hooks/useScrollActive";
 
-import Hiroshi from "../public/hiroshi.jpg";
+import Techs from "../public/provides/techs.webp";
+import Software from "../public/provides/software.webp";
+import Web from "../public/provides/web.webp";
+import Blockchain from "../public/provides/blockchain.webp";
+
+
 import AboutBgSvg from "@/components/AboutBgSvg";
 import EduGroup from "@/components/EduGroup";
 
@@ -96,7 +101,7 @@ const AboutSection: React.FC = () => {
   const aboutSection = useScrollActive(sectionRef);
   const { onSectionChange } = useSection();
   useEffect(() => {
-    aboutSection ? onSectionChange!("who am i?") : onSectionChange!("");
+    aboutSection ? onSectionChange!("What we Provide") : onSectionChange!("");
   }, [aboutSection, onSectionChange]);
 
   return (
@@ -106,43 +111,76 @@ const AboutSection: React.FC = () => {
     >
       <section id="whoami" className="section">
         <RoughNotationGroup>
-          <div className="text-center">
+          <div className="text-center mb-10">
             <RoughNotation
               type="underline"
-              color={`${
-                theme === "light" ? "rgb(0, 122, 122)" : "rgb(5 206 145)"
-              }`}
+              color={`${theme === "light" ? "rgb(0, 122, 122)" : "rgb(5 206 145)"
+                }`}
               strokeWidth={2}
               order={1}
               show={isSecOnScreen}
             >
-              <h2 className="section-heading">Who am I?</h2>
+              <h2 className="section-heading">What we Provide</h2>
             </RoughNotation>
           </div>
-          <div className="md:grid grid-rows-5 lg:grid-rows-6 grid-cols-5">
-            <div className="col-start-1 col-end-3 row-start-1 row-end-4 lg:row-end-3 lg:col-start-1 lg:col-end-3 flex justify-center items-center py-4 lg:mb-[8%]">
+          <div className="md:grid grid-rows-5 lg:grid-rows-8 grid-cols-5">
+            <div className="col-start-1 col-end-6 row-start-1 row-end-4 lg:row-start-0 lg:row-end-6 lg:col-start-1 lg:col-end-3 flex justify-center  py-4 lg:mb-[8%]">
               <div className="relative w-72">
                 <svg
                   width="96"
                   height="21"
                   viewBox="0 0 96 21"
                   aria-hidden="true"
+                  style={{marginTop: "-70px"}}
                   className="img-svg hidden lg:block fill-marrsgreen dark:fill-carrigreen absolute -top-14 -left-14"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M79.2202 0.959991L62.7802 17.32L46.3301 0.959991L29.8902 17.32L13.4501 0.959991L0.410156 13.94L0.400146 17.58L13.4501 4.58999L29.8902 20.95L46.3301 4.58999L62.7802 20.95L79.2202 4.58999L93.7302 19.02L95.5402 17.19L79.2202 0.959991Z" />
                 </svg>
-
-                <div className="profile-picture overflow-hidden md:overflow-visible rounded-md md:shadow-2xl">
+                                
+                
+                
+                <div className="profile-picture overflow-hidden md:overflow-visible rounded-md md:shadow-2xl m-2">
                   <Image
-                    src={Hiroshi}
+                    src={Software}
                     width={1700}
                     height={1790}
                     priority
-                    alt="Hiroshi Tanaka profile picture"
+                    alt="PowerWebs profile picture"
                     className="rounded-md"
                   />
                 </div>
+                <div className="profile-picture overflow-hidden md:overflow-visible rounded-md md:shadow-2xl m-2">
+                  <Image
+                    src={Blockchain}
+                    width={1700}
+                    height={1790}
+                    priority
+                    alt="PowerWebs profile picture"
+                    className="rounded-md"
+                  />
+                </div>
+                <div className="profile-picture overflow-hidden md:overflow-visible rounded-md md:shadow-2xl m-2">
+                  <Image
+                    src={Web}
+                    width={1700}
+                    height={1790}
+                    priority
+                    alt="PowerWebs profile picture"
+                    className="rounded-md"
+                  />
+                </div>
+                <div className="profile-picture overflow-hidden md:overflow-visible rounded-md md:shadow-2xl m-2">
+                  <Image
+                    src={Techs}
+                    width={1700}
+                    height={1790}
+                    priority
+                    alt="PowerWebs profile picture"
+                    className="rounded-md"
+                  />
+                </div>
+                
 
                 <svg
                   width="15"
@@ -167,19 +205,16 @@ const AboutSection: React.FC = () => {
                 </svg>
               </div>
             </div>
-            <p className="col-start-1 col-end-3 row-start-2 row-end-3 lg:row-start-1 lg:row-end-1 lg:col-start-3 lg:col-end-5 lg:ml-8 lg:mt-auto about-intro">
-              I have worked as a software engineer for 8 years in various industries
-              like SaaS, B2B, marketplace, crypto, bible translation projects, Iot projects.
-              Currently working as a lead backend developer for Lattis.io
-              since 2023 and playing as a head of development for Pricevault Ltd since 2022.
-              Core skills are React.js, Javascript, Typescript, Node.js, and python.
+            
+            <p className="col-start-1 col-end-3 row-start-0 row-end-3 lg:row-start-0 lg:row-end-1 lg:col-start-3 lg:col-end-5 lg:ml-8 lg:mt-auto about-intro">
+              At our development team, we offer a comprehensive range of services tailored to meet the needs of both Web3 and Web2 projects. Our expertise ensures that we deliver high-quality solutions that drive success for our clients. Here’s what we offer:
             </p>
 
             <div
-              className="col-start-3 col-end-6 row-start-1 row-end-6 lg:row-start-2 lg:row-end-0 md:ml-8 place-content-end"
+              className="col-start-3 col-end-6 row-start-1 row-end-6 lg:row-start-1 lg:row-end-0 md:ml-8 place-content-end"
               ref={eduRef}
             >
-              <p className="edu-bg my-4">WORK EXPERIENCE</p>
+              <p className="edu-bg my-4">Parts Of Provide</p>
               {educationInfo.map((edu) => (
                 <EduGroup edu={edu} key={edu.id} />
               ))}
@@ -196,51 +231,87 @@ const AboutSection: React.FC = () => {
 const educationInfo = [
   {
     id: 1,
-    title: "Lattis",
-    subTitle: "Senior Fullstack Engineer | Apr 2023 – May 2024",
+    title: "Custom Software Development",
+    subTitle: "Bespoke Solutions to Drive Your Vision",
     list: [
-      "Analyzed end users needs and develop software solutions working with project manager and product owner to meet specification needs.",
-      "Wrote clean, efficient, and maintainable code following best practices and coding standards removing technical debts."
+      "Tailored applications that transform unique ideas into reality.",
+      "Scalable, high-performance solutions developed using cutting-edge technologies.",
+      "Agile methodology for rapid iterations and continuous improvement."
     ],
   },
   {
     id: 2,
-    title: "Pricevault Ltd ",
-    subTitle: "Senior Fullstack Engineer | Mar 2022 – Mar 2023",
+    title: "Blockchain Development ",
+    subTitle: "Unlock the Future with Decentralized Solutions",
     list: [
-      "PriceVault helps portfolio managers reliably value the most illiquid and complex trades, proactively reduce risks in the valuation process and stay compliant with regulations. (pricevault.io)",
-      "Facilitated knowledge sharing, improved code quality, and promoted a collaborative and supportive work environment by contributing to technical documentation and participating in code reviews.",
+      "Robust smart contracts that automate processes and enhance security.",
+      "Decentralized application (DApp) development for transparency and trust.",
+      "Tailored functionalities to meet specific use cases and business needs."
     ],
   },
   {
     id: 3,
-    title: "Ameraiot Inc",
-    subTitle: "Fullstack Engineer | Jun 2020 – Jan 2022",
+    title: "Web Development",
+    subTitle: "Transformative Digital Experiences",
     list: [
-      "Amera delivers quantum resistant solutions for your products today.",
-      "Led a team of 5 engineers in end-to-end development of all in one platform (ameraiot.com) for team work using a tech stack - React, Redux, Python, Node.js, PostgreSQL, etc.",
-      "Planned and performed Quality Assurance, keeping test coverage of backend codebase more than 70% using unittest, Mocha, and Chai.",
+      "Stunning, responsive websites that captivate users and drive engagement.",
+      "Best practices in SEO and performance optimization for better visibility.",
+      "Dynamic corporate sites and expansive e-commerce platforms crafted for results."
     ],
   },
   {
     id: 4,
-    title: "Fenrir Inc ",
-    subTitle: "Fullstack Engineer | Jul 2018 – Mar 2020",
+    title: "Mobile App Development",
+    subTitle: "Engage Users Anytime, Anywhere",
     list: [
-      "Fenrir Inc helps businesses grow their sales and elevate their brand through Fenrir innovative solution.",
-      "Assessing project requirements using Agile & Scrum principles that helped prioritize developing activities and reduce ad hoc work requests by 27%.",
-      "Capturing the best development practices in a way of common condign standards that helped to decrease code complexity and improve maintainability of the shared libraries and components.",
+      "Cross-platform mobile applications that provide seamless experiences.",
+      "Intuitive interfaces designed to enhance user engagement and retention.",
+      "Scalable solutions that allow for future enhancements as your user base grows."
     ],
   },
   {
     id: 5,
-    title: "EDUCATION",
-    subTitle: "Tokyo University of Science | Apr 2014",
+    title: "UI/UX Design",
+    subTitle: "Crafting Experiences That Resonate",
     list: [
-      "Tokyo University of Science",
-      "MS, Computer Science",
+      "User-centered design principles that enhance usability and satisfaction.",
+      "In-depth research and testing to create visually stunning designs.",
+      "Meaningful interactions that drive higher conversion rates."
     ],
   },
+  {
+    id: 6,
+    title: "Consulting Services",
+    subTitle: "Strategic Insights for Digital Transformation",
+    list: [
+      "Expert guidance on the latest technologies and industry trends.",
+      "Assessment of current systems to identify opportunities for improvement.",
+      "Strategic planning to align technology initiatives with business goals."
+    ],
+  },
+  {
+    id: 7,
+    title: "Maintenance and Support",
+    subTitle: "Proactive Support for Optimal Performance",
+    list: [
+      "Ongoing maintenance to keep systems secure and up-to-date.",
+      "Regular performance assessments to minimize downtime.",
+      "Focus on technical details while you concentrate on core business activities."
+
+    ],
+  },
+  {
+    id: 8,
+    title: "Training and Workshops",
+    subTitle: "Empowering Your Team for Success",
+    list: [
+      "Hands-on training sessions that equip your team with essential skills.",
+      "Coverage of best practices in development and project management.",
+      "Workshops on emerging technologies to drive productivity and innovation."
+
+    ],
+  },
+  
 ];
 
 export default AboutSection;

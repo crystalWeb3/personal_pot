@@ -1,4 +1,5 @@
-import { useEffect, useRef } from "react";
+// components/ContactSection.tsx
+import { useEffect, useRef, useState } from "react";
 import { RoughNotation } from "react-rough-notation";
 import { useTheme } from "next-themes";
 
@@ -6,6 +7,7 @@ import LinkButton from "@/components/LinkButton";
 import { useSection } from "context/section";
 import useOnScreen from "hooks/useOnScreen";
 import useScrollActive from "hooks/useScrollActive";
+import ContactModal from "@/components/ContactModal";
 
 const ContactSection: React.FC = () => {
   const { theme } = useTheme();
@@ -16,12 +18,13 @@ const ContactSection: React.FC = () => {
   const elementRef = useRef<HTMLDivElement>(null);
   const isOnScreen = useOnScreen(elementRef);
 
-  // Set active link for contact section
   const contactSection = useScrollActive(sectionRef);
   const { onSectionChange } = useSection();
   useEffect(() => {
     contactSection && onSectionChange!("contact");
   }, [contactSection]);
+
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
 
   return (
     <section
@@ -45,14 +48,13 @@ const ContactSection: React.FC = () => {
           Let's be awesome together!
         </h3>
         <p className="mb-6 mx-auto max-w-lg md:mb-10 lg:leading-loose">
-          As a dev, I am driven by my love for coding and my desire for new
-          challenges. If you have opportunities for collaboration or want to
-          build something amazing, don't hesitate to contact me!
+          Your journey toward success starts here. We invite you to reach out and explore how our tailored services can elevate your project. Our dedicated team is eager to understand your unique vision and provide the expertise you need to turn it into reality. Let’s collaborate and create something extraordinary together!
         </p>
-        <LinkButton href={`mailto:hiroshi.tan57@gmail.com`}>
+        <LinkButton onClick={() => setIsModalOpen(true)}>
           Get in touch!
         </LinkButton>
       </div>
+      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   );
 };

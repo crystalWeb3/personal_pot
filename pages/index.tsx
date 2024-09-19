@@ -11,9 +11,12 @@ import ProjectSection from "@/sections/ProjectSection";
 import BlogSection from "@/sections/BlogSection";
 import ContactSection from "@/sections/ContactSection";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 import { getAllPosts } from "utils/api";
 import { MdxMeta } from "../pages/blog/posts/[slug]";
+
+import logo from 'public/provides/brand.webp'
 
 type Props = {
   blogPosts: MdxMeta[];
@@ -21,23 +24,24 @@ type Props = {
 
 export const meta = {
   description:
-    "Hiroshi Tanaka is a full-stack developer based in Tokyo, Myanmar. He is passionate about writing codes and developing web applications to solve real-life challenges.",
-  author: "Hiroshi Tanaka",
-  type: "website",
-  ogImage: `${process.env.NEXT_PUBLIC_URL}/Hiroshi-dev-og-new.png`,
-  siteName: "Hiroshi Tanaka",
-  imageAlt: "Hiroshi Tanaka portfolio website",
+    "PowerWebs is the most powerful development team. Development not normal websites, powerful, clean, beautiful, optimized products. Out team is powerful and trusted.",
+  author: "PowerWebs",
+  type: "website",  
+  siteName: "PowerWebs",
+  imageAlt: "PowerWebs is the most powerful Development Team.",
 };
 
 const Home: NextPage<Props> = ({ blogPosts }) => {
   return (
     <>
       <AppHead
-        title="Hiroshi Tanaka - A Full-stack Developer"
+        title="PowerWebs"
         url={`${process.env.NEXT_PUBLIC_URL}`}
         meta={meta}
       />
-      <Loader>Hiroshi.dev</Loader>
+      <Loader>            
+        PowerWebs        
+      </Loader>
       <div className="bg-bglight dark:bg-bgdark overflow-hidden">
         <div className="selection:bg-marrsgreen selection:text-bglight dark:selection:bg-carrigreen dark:selection:text-bgdark">
           <SkipToMain />
