@@ -29,7 +29,7 @@ const Home: NextPage = () => {
               might be a typo in the URL.
             </div>
             <div className="flex space-x-4">
-              <LinkButton href="/" outline>
+              <LinkButton outline>
                 Go back Home
               </LinkButton>
               <Link
