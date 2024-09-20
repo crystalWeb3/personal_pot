@@ -24,7 +24,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
       email,
       message,
     };
-
+    console.log(templateParams)
     emailjs
       .send(
         "service_h0ozx2k",
@@ -34,6 +34,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
       )
       .then(
         (response) => {
+          
           console.log("SUCCESS!", response.status, response.text);
           setStatus("Message sent successfully!");
           setName("");
@@ -104,7 +105,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
                 className="border border-gray-600 rounded p-2 w-full bg-white text-black"
               />
             </div>
-            <LinkButton className="w-full">Send Message</LinkButton>
+            <LinkButton onClick={(e)=>handleSubmit(e)} className="w-full">Send Message</LinkButton>
             <div className="mt-5"></div>
             {status && <p className="mt-2 text-white">{status}</p>}
             <div className="mt-10"></div>

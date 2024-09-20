@@ -7,7 +7,7 @@ type Props = {
   outline?: boolean;
   className?: string;
   children: React.ReactNode;
-  onClick?: () => void; // Add onClick prop
+  onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 };
 
 const LinkButton: React.FC<Props> = ({
