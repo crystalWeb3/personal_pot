@@ -8,9 +8,8 @@ import { useSection } from "context/section";
 import useOnScreen from "hooks/useOnScreen";
 import useScrollActive from "hooks/useScrollActive";
 
-import tizz from "public/projects/tizz.png";
 import concave from "../public/projects/concave.png";
-import ubranmix from "public/projects/ubranmix.png";
+
 import bonfida from "../public/projects/bonfida.png";
 import blast from "../public/projects/blast.png";
 import bonzo from "../public/projects/bonzo.png";
