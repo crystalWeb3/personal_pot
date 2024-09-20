@@ -22,7 +22,7 @@
     "react-dom": "18.2.0",
     "react-leaflet": "^4.2.1",
     "react-rough-notation": "^1.0.3",
-    "react-simple-maps": "^1.0.0",
+    "react-simple-maps": "^3.0.0",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
     "swiper": "^8.4.5"
