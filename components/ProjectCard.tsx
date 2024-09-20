@@ -64,26 +64,26 @@ const ProjectCard: React.FC<Props> = ({ index, project }) => {
   const [starCount, setStarCount] = useState();
   const [starCountUrl, setStarCountUrl] = useState();
 
-  useEffect(() => {
-    let ignore = false;
-    // async function fetchData() {
-    //   const response = await fetch(project.githubApi);
-    //   const data = await response.json();
-    //   const stargazersCount = data.stargazers_count;
-    //   const stargazersUrl = data.stargazers_url;
+  // useEffect(() => {
+  //   let ignore = false;
+  //   async function fetchData() {
+  //     const response = await fetch(project.githubApi);
+  //     const data = await response.json();
+  //     const stargazersCount = data.stargazers_count;
+  //     const stargazersUrl = data.stargazers_url;
 
-    //   if (stargazersCount && stargazersUrl && !ignore) {
-    //     setStarCount(stargazersCount);
-    //     setStarCountUrl(stargazersUrl);
-    //   }
-    // }
+  //     if (stargazersCount && stargazersUrl && !ignore) {
+  //       setStarCount(stargazersCount);
+  //       setStarCountUrl(stargazersUrl);
+  //     }
+  //   }
 
-    // fetchData();
+  //   fetchData();
 
-    () => {
-      ignore = true;
-    };
-  }, [project.githubApi]);
+  //   () => {
+  //     ignore = true;
+  //   };
+  // }, [project.githubApi]);
 
   return (
     <div ref={sectionRef} className={`md:basis-1/2 md:px-8 py-2 md:py-4`}>

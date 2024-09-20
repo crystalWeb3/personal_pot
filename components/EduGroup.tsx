@@ -1,9 +1,6 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import Image from "next/image";
-
-import powerwebs from "../public/powerwebs.jpg";
 
 type Props = {
   edu: {
@@ -57,7 +54,6 @@ const EduGroup: React.FC<Props> = ({ edu }) => {
 
   return (
     <div className="edu-group mb-4" ref={sectionRef}>
-      
       <div className="overflow-hidden">
         <h3
           className={`edu-heading text-marrsgreen dark:text-carrigreen text-lg font-medium`}

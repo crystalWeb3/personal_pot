@@ -6,7 +6,7 @@ import slugify from "./slugify";
 const postsDirectory = join(process.cwd(), "contents");
 
 export function getPostSlugs() {
-  const files = fs.existsSync(postsDirectory) ? fs.readdirSync(postsDirectory) : [];
+  const files = fs.readdirSync(postsDirectory);
 
   const slugs = files.map((file) => {
     const fullPath = join(postsDirectory, file);
@@ -14,7 +14,7 @@ export function getPostSlugs() {
     return content.slug ? content.slug : file.replace(/\.md$/, "");
   });
 
-  return slugs || [];
+  return slugs;
 }
 
 export function getPostBySlug(slug: string, fields: string[] = []) {
@@ -59,7 +59,7 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
 }
 
 export function getCategorySlugs(category: string) {
-  const files = fs.existsSync(postsDirectory) ? fs.readdirSync(postsDirectory) : [];
+  const files = fs.readdirSync(postsDirectory);
 
   let slugs: string[] = [];
 
@@ -70,13 +70,12 @@ export function getCategorySlugs(category: string) {
     slugs.push(data.slug ? data.slug : file.replace(/\.md$/, ""));
   }
 
-  return slugs || [];
+  return slugs;
 }
 
 export function getAllPosts(fields: string[] = [], category?: string) {
   const slugs = category ? getCategorySlugs(category) : getPostSlugs();
-  
-  const posts = (slugs || [])  // Ensure it's always an array
+  const posts = slugs
     .map((slug) => getPostBySlug(slug, fields))
     // sort posts by date in descending order
     .sort((post1, post2) =>
@@ -85,10 +84,8 @@ export function getAllPosts(fields: string[] = [], category?: string) {
         ? -1
         : 1
     );
-
   return posts;
 }
-
 
 export function getTagSlugs(tag: string) {
   const files = fs.readdirSync(postsDirectory);

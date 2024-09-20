@@ -10,9 +10,10 @@ import useOnScreen from "hooks/useOnScreen";
 import useScrollActive from "hooks/useScrollActive";
 
 import Techs from "../public/provides/techs.webp";
-import Software from "../public/provides/software.webp";
-import Web from "../public/provides/web.webp";
+import Brand from "../public/provides/brand.webp";
+import Total from "../public/provides/total.webp";
 import Blockchain from "../public/provides/blockchain.webp";
+import Brandon from "../public/Brandon.jpg";
 
 
 import AboutBgSvg from "@/components/AboutBgSvg";
@@ -142,7 +143,7 @@ const AboutSection: React.FC = () => {
                 
                 <div className="profile-picture overflow-hidden md:overflow-visible rounded-md md:shadow-2xl m-2">
                   <Image
-                    src={Software}
+                    src={Brandon}
                     width={1700}
                     height={1790}
                     priority
@@ -152,7 +153,7 @@ const AboutSection: React.FC = () => {
                 </div>
                 <div className="profile-picture overflow-hidden md:overflow-visible rounded-md md:shadow-2xl m-2">
                   <Image
-                    src={Blockchain}
+                    src={Brand}
                     width={1700}
                     height={1790}
                     priority
@@ -162,7 +163,7 @@ const AboutSection: React.FC = () => {
                 </div>
                 <div className="profile-picture overflow-hidden md:overflow-visible rounded-md md:shadow-2xl m-2">
                   <Image
-                    src={Web}
+                    src={Total}
                     width={1700}
                     height={1790}
                     priority
@@ -170,7 +171,7 @@ const AboutSection: React.FC = () => {
                     className="rounded-md"
                   />
                 </div>
-                <div className="profile-picture overflow-hidden md:overflow-visible rounded-md md:shadow-2xl m-2">
+                {/* <div className="profile-picture overflow-hidden md:overflow-visible rounded-md md:shadow-2xl m-2">
                   <Image
                     src={Techs}
                     width={1700}
@@ -179,7 +180,7 @@ const AboutSection: React.FC = () => {
                     alt="PowerWebs profile picture"
                     className="rounded-md"
                   />
-                </div>
+                </div> */}
                 
 
                 <svg
@@ -231,87 +232,52 @@ const AboutSection: React.FC = () => {
 const educationInfo = [
   {
     id: 1,
-    title: "Custom Software Development",
-    subTitle: "Bespoke Solutions to Drive Your Vision",
+    title: "Zbyte",
+    subTitle: "Senior Blockchain Engineer | May 2023 – Aug 2024",
     list: [
-      "Tailored applications that transform unique ideas into reality.",
-      "Scalable, high-performance solutions developed using cutting-edge technologies.",
-      "Agile methodology for rapid iterations and continuous improvement."
+      "Developed a chain in Rust with EVM and other chains and decentralized applications (dApps).",
+      "Designed and executed smart contracts in Solidity, ensuring secure and efficient execution of business logic."
     ],
   },
   {
     id: 2,
-    title: "Blockchain Development ",
-    subTitle: "Unlock the Future with Decentralized Solutions",
+    title: "CurioNFT ",
+    subTitle: "Blockchain Developer | Mar 2021 – Aug 2023 ",
     list: [
-      "Robust smart contracts that automate processes and enhance security.",
-      "Decentralized application (DApp) development for transparency and trust.",
-      "Tailored functionalities to meet specific use cases and business needs."
+      "Designed and enforced advanced smart contracts for various applications, including DeFi projects, NFT marketplaces, and DAOs, resulting in significant user base growth.",
+      "Expanded solidity smart contract system for bonding/staking protocol on Solana, established smart contract system on Rust/anchor framework without any security issues.",
+      "Actively participated in code review processes, fostering a culture of excellence and continuous improvement within the development team.",
     ],
   },
   {
     id: 3,
-    title: "Web Development",
-    subTitle: "Transformative Digital Experiences",
+    title: "OnBlink Inc",
+    subTitle: "Rust Engineer | Jun 2020 – Jan 2022",
     list: [
-      "Stunning, responsive websites that captivate users and drive engagement.",
-      "Best practices in SEO and performance optimization for better visibility.",
-      "Dynamic corporate sites and expansive e-commerce platforms crafted for results."
+      "Smoothly integrated the Blockchain platform with external systems, resulting in a 15% increase in efficiency. Built a chat server, Twitter bot, and database, which improved communication and collaboration by 20% .",
+      "Implemented and maintained Rust-based security protocols to safeguard the Blockchain infrastructure against 99% of potential threats and vulnerabilities.",
+      "Spearheaded the design, implementation, and optimization of core Blockchain systems and infrastructure using Rust, resulting in a 20% increase in performance.",
     ],
   },
   {
     id: 4,
-    title: "Mobile App Development",
-    subTitle: "Engage Users Anytime, Anywhere",
+    title: "Hour Consulting",
+    subTitle: "Senior FullStack Developer | Jul 2018 – Mar 2020",
     list: [
-      "Cross-platform mobile applications that provide seamless experiences.",
-      "Intuitive interfaces designed to enhance user engagement and retention.",
-      "Scalable solutions that allow for future enhancements as your user base grows."
+      "Spearheaded the successful development and maintenance of an e-commerce platform using Magento, causing a seismic shift in sales with an increase of 20% and exponential growth in the user base by 15%.",
+      "Experimented with Search Engine Optimization resulting in a boost of the company website's ranking on Google by 1 position",
+      "Built out E-commerce admin panel for large shopping mall with a team using Vue, Vuex, Vue-Router, Tailwind, ExpressJs, MongoDB, Socket.io, C++, Data Analsys, Python.",
     ],
   },
   {
     id: 5,
-    title: "UI/UX Design",
-    subTitle: "Crafting Experiences That Resonate",
+    title: "EDUCATION",
+    subTitle: "Chinese University of Hong Kong",
     list: [
-      "User-centered design principles that enhance usability and satisfaction.",
-      "In-depth research and testing to create visually stunning designs.",
-      "Meaningful interactions that drive higher conversion rates."
+      "Chinese University of Hong Kong",
+      "MS, Computer Science",
     ],
   },
-  {
-    id: 6,
-    title: "Consulting Services",
-    subTitle: "Strategic Insights for Digital Transformation",
-    list: [
-      "Expert guidance on the latest technologies and industry trends.",
-      "Assessment of current systems to identify opportunities for improvement.",
-      "Strategic planning to align technology initiatives with business goals."
-    ],
-  },
-  {
-    id: 7,
-    title: "Maintenance and Support",
-    subTitle: "Proactive Support for Optimal Performance",
-    list: [
-      "Ongoing maintenance to keep systems secure and up-to-date.",
-      "Regular performance assessments to minimize downtime.",
-      "Focus on technical details while you concentrate on core business activities."
-
-    ],
-  },
-  {
-    id: 8,
-    title: "Training and Workshops",
-    subTitle: "Empowering Your Team for Success",
-    list: [
-      "Hands-on training sessions that equip your team with essential skills.",
-      "Coverage of best practices in development and project management.",
-      "Workshops on emerging technologies to drive productivity and innovation."
-
-    ],
-  },
-  
 ];
 
 export default AboutSection;

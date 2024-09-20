@@ -8,9 +8,9 @@ import { useSection } from "context/section";
 import useOnScreen from "hooks/useOnScreen";
 import useScrollActive from "hooks/useScrollActive";
 
-// import tizz from "public/projects/tizz.png";
+import tizz from "public/projects/tizz.png";
 import concave from "public/projects/concave.png";
-// import ubranmix from "public/projects/ubranmix.png";
+import ubranmix from "public/projects/ubranmix.png";
 import bonfida from "public/projects/bonfida.png";
 import blast from "public/projects/blast.png";
 import bonzo from "public/projects/bonzo.png";
@@ -44,12 +44,12 @@ const ProjectSection: React.FC = () => {
           order={1}
           show={isOnScreen}
         >
-          <h2 className="section-heading">Successful Projects</h2>
+          <h2 className="section-heading">Featured Projects</h2>
         </RoughNotation>
       </div>
       <span className="project-desc text-center block mb-4" ref={elementRef}>
-        “Amazing and Successful Projects" <br />
-        These are for you. You can choose simillar.
+        “Talk is cheap. Show me the code”? I got you. <br />
+        Here are some of my projects you shouldn't misss
       </span>
       <div className="flex flex-wrap">
         {projects.map((project, index) => (
@@ -57,15 +57,15 @@ const ProjectSection: React.FC = () => {
         ))}
       </div>
       <div className="others text-center mb-16">
-        Just ask for us, then Your will be been solved with light speed.
-        {/* <a
-          href="https://github.com/powerwebs"
+        Other projects can be explored in{" "}
+        <a
+          href="https://github.com/lucky-gru"
           target="_blank"
           rel="noreferrer"
           className="font-medium underline link-outline text-marrsgreen dark:text-carrigreen whitespace-nowrap"
         >
           my github profile
-        </a> */}
+        </a>
       </div>
     </section>
   );
@@ -87,9 +87,9 @@ const projects = [
     desc: "Here at Concave, we see ourselves as the smooth-talking spooning type. This is why we went ahead and created our own suite of products that feed into each other to create a seamless experience when interacting with Concave.",
     tags: ["Solana", "Rust", "React", "TailwindCSS", "Anchor", "Next"],
     liveUrl: "https://concave.lol/",
-    codeUrl: "https://github.com/powerwebs/astro-paper",
+    codeUrl: "https://github.com/lucky-gru/astro-paper",
     bgColor: "bg-[#9FD0E3]",
-    githubApi: "https://api.github.com/repos/powerwebs/astro-paper",
+    githubApi: "https://api.github.com/repos/Brandon/astro-paper",
   },
   {
     title: "Bonfida",
@@ -106,9 +106,9 @@ const projects = [
     desc: "Establishing your identity in a permissionless and censorship-resistant way using Solana. We give the power back to our users",
     tags: ["Solana", "Rust", "React", "Typescript", "Anchor"],
     liveUrl: "https://www.bonfida.org/",
-    codeUrl: "https://github.com/powerwebs/astro-paper",
+    codeUrl: "https://github.com/lucky-gru/astro-paper",
     bgColor: "bg-[#9FD0E3]",
-    githubApi: "https://api.github.com/repos/powerwebs/astro-paper",
+    githubApi: "https://api.github.com/repos/Brandon/astro-paper",
   },
   {
     title: "lattis",
@@ -125,9 +125,9 @@ const projects = [
     desc: "Lattis is revolutionizing fleet management across industries like micromobility, car rental, delivery, and public transit.",
     tags: ["Next", "TypeScript", "React", "TailwindCSS"],
     liveUrl: "https://lattis.io",
-    codeUrl: "https://github.com/powerwebs/astro-paper",
+    codeUrl: "https://github.com/lucky-gru/astro-paper",
     bgColor: "bg-[#9FD0E3]",
-    githubApi: "https://api.github.com/repos/powerwebs/astro-paper",
+    githubApi: "https://api.github.com/repos/Brandon/astro-paper",
   },
   {
     title: "amera",
@@ -141,12 +141,12 @@ const projects = [
         className="transition-transform duration-500 hover:scale-110 object-cover"
       />
     ),
-    desc: "Remote secure work website in terminal version developed with React and TypeScript. ",
+    desc: "My portfolio website in terminal version developed with React and TypeScript. ",
     tags: ["React", "TypeScript", "Styled-Components"],
     liveUrl: "https://amerashare.com",
-    codeUrl: "https://github.com/powerwebs/terminal-portfolio",
+    codeUrl: "https://github.com/lucky-gru/terminal-portfolio",
     bgColor: "bg-[#B4BEE0]",
-    githubApi: "https://api.github.com/repos/powerwebs/terminal-portfolio",
+    githubApi: "https://api.github.com/repos/Brandon/terminal-portfolio",
   },
   {
     title: "blast",
@@ -163,9 +163,9 @@ const projects = [
     desc: "An ecommerce web application where users can browse various products, add to wishlist, add to cart, and make purchase. Available in English and Burmese languages.",
     tags: ["NextJS", "TypeScript", "TailwindCSS", "ContextAPI", "Vue"],
     liveUrl: "https://app.blast.gg/",
-    codeUrl: "https://github.com/powerwebs/haru-fashion",
+    codeUrl: "https://github.com/lucky-gru/haru-fashion",
     bgColor: "bg-[#A6CECE]",
-    githubApi: "https://api.github.com/repos/powerwebs/haru-fashion",
+    githubApi: "https://api.github.com/repos/Brandon/haru-fashion",
   },
   {
     title: "Bonzo",
@@ -182,9 +182,9 @@ const projects = [
     desc: "A RESTful API developed for Haru fashion ecommerce project. Include CRUD operations, authentication, authorization, forgot/reset password and full-text search.",
     tags: ["ExpressJS", "TypeScript", "PostgreSQL", "Prisma"],
     liveUrl: "https://getbonzo.com/",
-    codeUrl: "https://github.com/powerwebs/haru-api",
+    codeUrl: "https://github.com/lucky-gru/haru-api",
     bgColor: "bg-[#C5E4E7]",
-    githubApi: "https://api.github.com/repos/powerwebs/haru-api",
+    githubApi: "https://api.github.com/repos/Brandon/haru-api",
   },
   {
     title: "Botbot",
@@ -201,9 +201,9 @@ const projects = [
     desc: "An online bookstore developed using NextJS 13 with appDir and StrapiCMS.",
     tags: ["NextJS", "Radix UI ", "TailwindCSS", "TanstackQuery", "StrapiCMS"],
     liveUrl: "https://oi.botbot.bot/",
-    codeUrl: "https://github.com/powerwebs/next-bookstore",
+    codeUrl: "https://github.com/lucky-gru/next-bookstore",
     bgColor: "bg-[#EBF4F4]",
-    githubApi: "https://api.github.com/repos/powerwebs/next-bookstore",
+    githubApi: "https://api.github.com/repos/Brandon/next-bookstore",
   },
   {
     title: "Pricevault",
@@ -220,9 +220,9 @@ const projects = [
     desc: "Admin Dashboard UI built with Shadcn and Vite. Built with responsiveness and accessibility in mind.",
     tags: ["ShadcnUI", "Vite", "React Router", "TypeScript"],
     liveUrl: "https://pricevault.io/",
-    codeUrl: "https://github.com/powerwebs/shadcn-admin",
+    codeUrl: "https://github.com/lucky-gru/shadcn-admin",
     bgColor: "bg-[#FBFBFB]",
-    githubApi: "https://api.github.com/repos/powerwebs/shadcn-admin",
+    githubApi: "https://api.github.com/repos/Brandon/shadcn-admin",
   },
   
 ];

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import gsap from "gsap";
 import MapComponent from "./MapComponent"; // Import the MapComponent
-import ChatComponent from "./ChatComponent"; // Import the ChatComponent
+// import ChatComponent from "./ChatComponent"; // Import the ChatComponent
 import LinkButton from "./LinkButton";
 
 interface ContactModalProps {
@@ -100,7 +100,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 required
-                placeholder="ex: Please leave contact method (Telegram, Discord, Skype, Whatsapp)"
+                placeholder="(Telegram, Discord, Skype, Whatsapp)"
                 className="border border-gray-600 rounded p-2 w-full bg-white text-black"
               />
             </div>

@@ -9,7 +9,6 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 type Props = {
   team: {
     name?: string;
-    role?: string;
     description?: string;
     imageUrl?: string;
     resume?: string;
@@ -25,7 +24,7 @@ const BlogImageCard: React.FC<Props> = ({
 }) => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
-  const { name, description, imageUrl, resume, role } = team;
+  const { name, description, imageUrl, resume } = team;
 
   // Animations
   useEffect(() => {
@@ -51,7 +50,7 @@ const BlogImageCard: React.FC<Props> = ({
         stagger: 0.2,
       }
     )
-      // .fromTo(q(".blog-title"), { y: 100 }, { y: 0, stagger: 0.2 }, "<25%")
+      .fromTo(q(".blog-title"), { y: 100 }, { y: 0, stagger: 0.2 }, "<25%")
       .fromTo(
         q(".blog-text"),
         { opacity: 0 },
@@ -73,10 +72,9 @@ const BlogImageCard: React.FC<Props> = ({
           >
             {name}
           </h3>
-          {/* <Link target="_blank" rel="noreferrer" href={String(role)}>
-            {role}
-          </Link> */}
-          <h6>{role}</h6>
+          <Link target="_blank" rel="noreferrer" href={String(resume)}>
+            Resume{" "}
+          </Link>
         </div>
         <div className="blog-image relative w-full h-48 md:h-40 mb-3">
           <Image
