@@ -9,15 +9,15 @@ import useOnScreen from "hooks/useOnScreen";
 import useScrollActive from "hooks/useScrollActive";
 
 import tizz from "public/projects/tizz.png";
-import concave from "public/projects/concave.png";
+import concave from "../public/projects/concave.png";
 import ubranmix from "public/projects/ubranmix.png";
-import bonfida from "public/projects/bonfida.png";
-import blast from "public/projects/blast.png";
-import bonzo from "public/projects/bonzo.png";
-import lattis from "public/projects/lattis.png";
-import amera from "public/projects/amera.png";
-import botbot from "public/projects/botbot.png";
-import pricevault from "public/projects/pricevault.jpg";
+import bonfida from "../public/projects/bonfida.png";
+import blast from "../public/projects/blast.png";
+import bonzo from "../public/projects/bonzo.png";
+import lattis from "../public/projects/lattis.png";
+import amera from "../public/projects/amera.png";
+import botbot from "../public/projects/botbot.png";
+import pricevault from "../public/projects/pricevault.jpg";
 
 const ProjectSection: React.FC = () => {
   const { theme } = useTheme();
