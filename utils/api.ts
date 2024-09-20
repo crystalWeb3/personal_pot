@@ -6,17 +6,15 @@ import slugify from "./slugify";
 const postsDirectory = join(process.cwd(), "contents");
 
 export function getPostSlugs() {
+  if (!fs.existsSync(postsDirectory)) {
+    console.error(`Directory ${postsDirectory} does not exist.`);
+    return []; // Return an empty array or handle as needed
+  }
+
   const files = fs.readdirSync(postsDirectory);
 
-  const slugs = files.map((file) => {
-    const fullPath = join(postsDirectory, file);
-    const content = matter(fs.readFileSync(fullPath, "utf8")).data;
-    return content.slug ? content.slug : file.replace(/\.md$/, "");
-  });
-
-  return slugs;
+  // Rest of the logic
 }
-
 export function getPostBySlug(slug: string, fields: string[] = []) {
   const files = fs.readdirSync(postsDirectory);
 
