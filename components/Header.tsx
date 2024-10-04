@@ -56,6 +56,7 @@ const Header: React.FC = () => {
   const themeBtnRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
+    setTheme("dark")
     gsap.fromTo(
       mainRef.current,
       { top: -120 },
