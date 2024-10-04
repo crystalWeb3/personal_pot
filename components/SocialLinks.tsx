@@ -35,7 +35,7 @@ const SocialLinks: React.FC<{ page?: string }> = ({ page }) => {
         </div>
       )}
       <div className="hidden fixed right-10 bottom-0 md:flex flex-col w-6 h-[17rem] items-center justify-between">
-        <div className="flex flex-col space-y-6">
+        {/* <div className="flex flex-col space-y-6">
           {socialLinks.map((social) => (
             <a
               key={social.id}
@@ -49,7 +49,7 @@ const SocialLinks: React.FC<{ page?: string }> = ({ page }) => {
             </a>
           ))}
         </div>
-        <div className="w-40 h-1 bg-bgdark dark:bg-bglight rotate-90"></div>
+        <div className="w-40 h-1 bg-bgdark dark:bg-bglight rotate-90"></div> */}
       </div>
     </>
   );
@@ -58,7 +58,7 @@ const SocialLinks: React.FC<{ page?: string }> = ({ page }) => {
 const socialLinks = [
   {
     id: 1,
-    title: "Brandon Lim's Github Profile",
+    title: "Crystal Web3's Github Profile",
     link: "https://github.com/lucky-gru",
     svg: (
       <svg
@@ -77,7 +77,7 @@ const socialLinks = [
   },
   {
     id: 2,
-    title: "Brandon Lim's Guru Profile",
+    title: "Crystal Web3's Guru Profile",
     link: "https://www.guru.com/freelancers/Brandon-tanaka",
     svg: (
       <svg
@@ -96,7 +96,7 @@ const socialLinks = [
   },
   {
     id: 3,
-    title: "Check Brandon Lim on Dev.to",
+    title: "Check Crystal Web3 on Dev.to",
     link: "https://www.hackerrank.com/certificates/3cbb5ba60c92",
     svg: (
       <svg
@@ -111,7 +111,7 @@ const socialLinks = [
   },
   {
     id: 4,
-    title: "Brandon Lim's Profile on Facebook",
+    title: "Crystal Web3's Profile on Facebook",
     link: "/resume/Brandon.pdf",
     svg: (
       <svg

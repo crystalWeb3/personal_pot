@@ -22,10 +22,10 @@ const AppHead: React.FC<Props> = ({
   url = `${process.env.NEXT_PUBLIC_URL}/blog`,
   meta,
 }) => {
-  let author = "Brandon Lim";
+  let author = "Crystal Web3";
   let description =
     "Articles about programming, coding, technologies, software engineering, my personal projects and my experiences.";
-  let siteName = "Brandon Lim's Blog";
+  let siteName = "Crystal Web3's Blog";
   let type = "article";
   let coverImage: string | undefined;
   let coverImageAlt: string | undefined;
@@ -44,7 +44,7 @@ const AppHead: React.FC<Props> = ({
   }
 
   let appOgImage = `${process.env.NEXT_PUBLIC_URL}/Brandon-blog-og.png`;
-  let appOgImageAlt = "Brandon Lim's Blog";
+  let appOgImageAlt = "Crystal Web3's Blog";
 
   if (ogImage) {
     appOgImage = ogImage;

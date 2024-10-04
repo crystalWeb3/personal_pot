@@ -7,7 +7,7 @@ const Footer: React.FC<Props> = ({ noPadding = false }) => {
     <footer
       className={`${noPadding ? "pb-4" : "pb-24"} md:pb-4 text-center mt-auto`}
     >
-      <div className="flex justify-center space-x-12 mb-4">
+      {/* <div className="flex justify-center space-x-12 mb-4">
         {socialLinks.map((social) => (
           <a
             key={social.id}
@@ -20,7 +20,7 @@ const Footer: React.FC<Props> = ({ noPadding = false }) => {
             {social.svg}
           </a>
         ))}
-      </div>
+      </div> */}
       <div>
         Coded with <span className="sr-only">love</span>
         <svg
@@ -38,7 +38,7 @@ const Footer: React.FC<Props> = ({ noPadding = false }) => {
             d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
           />
         </svg>{" "}
-        by Brandon Lim
+        by Crystal Web3
       </div>
     </footer>
   );
@@ -47,7 +47,7 @@ const Footer: React.FC<Props> = ({ noPadding = false }) => {
 const socialLinks = [
   {
     id: 1,
-    title: "Brandon Lim's Github Profile",
+    title: "Crystal Web3's Github Profile",
     link: "https://github.com/lucky-gru",
     svg: (
       <svg
@@ -66,7 +66,7 @@ const socialLinks = [
   },
   {
     id: 2,
-    title: "Brandon Lim's Credly Profile",
+    title: "Crystal Web3's Credly Profile",
     link: "https://www.credly.com/users/brandon-lim/badges",
     svg: (
       <svg
@@ -82,7 +82,7 @@ const socialLinks = [
   },
   {
     id: 3,
-    title: "Check Brandon Lim on Hackerrank.com",
+    title: "Check Crystal Web3 on Hackerrank.com",
     link: "https://www.hackerrank.com/brandon-lim/certificates",
     svg: (
       <svg
@@ -97,7 +97,7 @@ const socialLinks = [
   },
   {
     id: 4,
-    title: "Brandon Lim's Resume",
+    title: "Crystal Web3's Resume",
     link: "/resume/Brandon.pdf",
     svg: (
       <svg

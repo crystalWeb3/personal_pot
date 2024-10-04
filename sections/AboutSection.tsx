@@ -102,7 +102,7 @@ const AboutSection: React.FC = () => {
   const aboutSection = useScrollActive(sectionRef);
   const { onSectionChange } = useSection();
   useEffect(() => {
-    aboutSection ? onSectionChange!("What we Provide") : onSectionChange!("");
+    aboutSection ? onSectionChange!("Who am I") : onSectionChange!("");
   }, [aboutSection, onSectionChange]);
 
   return (
@@ -121,7 +121,7 @@ const AboutSection: React.FC = () => {
               order={1}
               show={isSecOnScreen}
             >
-              <h2 className="section-heading">What we Provide</h2>
+              <h2 className="section-heading">Who am I</h2>
             </RoughNotation>
           </div>
           <div className="md:grid grid-rows-5 lg:grid-rows-8 grid-cols-5">
