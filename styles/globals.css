@@ -95,3 +95,29 @@
     display: none !important;
   }
 }
+.modal2 {
+  animation: fade 0.2s ease-in;
+}
+
+.mobile-unshow {
+
+}
+
+@media screen and (max-width: 1024px) {
+  .mobile-unshow {
+    display: none;
+  }
+  #modal-content {
+    width: 90%;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  
+}

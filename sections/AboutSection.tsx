@@ -124,7 +124,7 @@ const AboutSection: React.FC = () => {
               <h2 className="section-heading">Who am I</h2>
             </RoughNotation>
           </div>
-          <div className="md:grid grid-rows-5 lg:grid-rows-8 grid-cols-5">
+          <div className="lg:grid grid-rows-5 lg:grid-rows-8 grid-cols-5">
             <div className="col-start-1 col-end-6 row-start-1 row-end-4 lg:row-start-0 lg:row-end-6 lg:col-start-1 lg:col-end-3 flex justify-center  py-4 lg:mb-[8%]">
               <div className="relative w-72">
                 <svg
@@ -141,9 +141,20 @@ const AboutSection: React.FC = () => {
                                 
                 
                 
-                <div className="profile-picture overflow-hidden md:overflow-visible rounded-md md:shadow-2xl m-2">
+                {/* <div className="profile-picture overflow-hidden md:overflow-visible rounded-md md:shadow-2xl m-2">
                   <Image
                     src={Brandon}
+                    width={1700}
+                    height={1790}
+                    priority
+                    alt="PowerWebs profile picture"
+                    className="rounded-md"
+                  />
+                </div> */}
+               
+                <div className="profile-picture overflow-hidden md:overflow-visible rounded-md md:shadow-2xl m-2">
+                  <Image
+                    src={Brand}
                     width={1700}
                     height={1790}
                     priority
@@ -153,7 +164,7 @@ const AboutSection: React.FC = () => {
                 </div>
                 <div className="profile-picture overflow-hidden md:overflow-visible rounded-md md:shadow-2xl m-2">
                   <Image
-                    src={Brand}
+                    src={Blockchain}
                     width={1700}
                     height={1790}
                     priority

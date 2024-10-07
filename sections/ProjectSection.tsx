@@ -56,17 +56,17 @@ const ProjectSection: React.FC = () => {
           <ProjectCard key={project.title} index={index} project={project} />
         ))}
       </div>
-      <div className="others text-center mb-16">
+      {/* <div className="others text-center mb-16">
         Other projects can be explored in{" "}
         <a
-          href="https://github.com/lucky-gru"
+          href="https://github.com/crystalweb3"
           target="_blank"
           rel="noreferrer"
           className="font-medium underline link-outline text-marrsgreen dark:text-carrigreen whitespace-nowrap"
         >
           my github profile
         </a>
-      </div>
+      </div> */}
     </section>
   );
 };

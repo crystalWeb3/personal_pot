@@ -86,7 +86,7 @@ const ProjectCard: React.FC<Props> = ({ index, project }) => {
   // }, [project.githubApi]);
 
   return (
-    <div ref={sectionRef} className={`md:basis-1/2 md:px-8 py-2 md:py-4`}>
+    <div ref={sectionRef} className={`md:basis-1/2 md:px-8 py-2 md:py-4 w-full`}>
       <div className={`project-card project-card-${index}`}>
         <div className="overflow-hidden">
           <div
