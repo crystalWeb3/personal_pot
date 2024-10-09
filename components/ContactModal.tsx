@@ -28,6 +28,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
       email,
       subject,
       message,
+      telegram
     };
     console.log(templateParams);
 
@@ -45,6 +46,8 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
           setName("");
           setEmail("");
           setMessage("");
+          setTelegram("");
+          setSubject("");
           onClose();
         },
         (err) => {
